@@ -149,7 +149,6 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      background-color: hsl(0, 100%, 67%, .1);
       padding: .8rem .5rem;
       border-radius: .5rem;
     }
@@ -162,7 +161,6 @@
     }
 
     .item .title p {
-      color: var(--light_red);
       font-size: 17px;
     }
 
@@ -195,6 +193,29 @@
 
     .summary button:hover {
       background: linear-gradient(to bottom, var(--light_slate_blue) 1%, var(--light_royal_blue) 99%);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      text-align: center;
+    }
+
+    footer p,
+    footer a {
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    footer a {
+      color: var(--light_slate_blue);
+      cursor: pointer;
+      transition: .5s all ease;
+    }
+
+    footer a:hover {
+      font-size: 22px;
+      color: var(--light_royal_blue);
     }
   </style>
 </head>
@@ -231,7 +252,7 @@
 
         <div class="item">
           <div class="title">
-            <img src="./images/favicon-32x32.png" alt="icon_item.svg">
+            <img src="./images/icon-memory.svg" alt="icon_item.svg">
             <p>Title</p>
           </div>
 
@@ -243,7 +264,7 @@
 
         <div class="item">
           <div class="title">
-            <img src="./images/favicon-32x32.png" alt="icon_item.svg">
+            <img src="./images/icon-memory.svg" alt="icon_item.svg">
             <p>Title</p>
           </div>
 
@@ -255,7 +276,7 @@
 
         <div class="item">
           <div class="title">
-            <img src="./images/favicon-32x32.png" alt="icon_item.svg">
+            <img src="./images/icon-memory.svg" alt="icon_item.svg">
             <p>Title</p>
           </div>
 
@@ -270,10 +291,10 @@
     </div>
   </main>
 
-  <!-- <footer>
+  <footer>
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
     <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
-  </footer> -->
+  </footer>
 
   <script>
     let item = document.querySelectorAll('.item')
@@ -295,7 +316,7 @@
       })
     }
 
-    // setData()
+    setData()
   </script>
 </body>
 
