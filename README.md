@@ -1,8 +1,8 @@
 # Frontend Mentor - Results summary component solution
 
-![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Results-summary-component?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Results-summary-component?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/Results-summary-component?style=for-the-badge)
 
 <img src="images/desktop.png" alt="desktop.png">
 
@@ -23,16 +23,8 @@
 
 Users should be able to:
 
-- DESCRIPTION OF WHAT THE USER CAN DO
-<!--- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Add new todos to the list
-- Mark todos as complete
-- Delete todos from the list
-- Filter by all/active/complete todos
-- Clear all completed todos
-- Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list-->
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
 ### Links
 
@@ -53,11 +45,8 @@ Users should be able to:
 
 ### Built with
 
-- DESCRIPTION OF LANGUAGE
-<!--- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Javascript properties-->
+- HTML
+- CSS
+- JAVASCRIPT
 
 [⬆ Back to the top](#name_of_repository)<br>
