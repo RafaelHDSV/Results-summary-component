@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: URL SOLUTION HERE
-- Live Site URL: URL SITE HERE
+- Live Site URL: https://results-summary-component-rafael.netlify.app/
 
 ### Screenshot
 
@@ -49,4 +49,4 @@ Users should be able to:
 - CSS
 - JAVASCRIPT
 
-[⬆ Back to the top](#name_of_repository)<br>
+[⬆ Back to the top](#frontend-mentor---results-summary-component-solution)<br>
