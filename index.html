@@ -10,7 +10,7 @@
   <meta name="robots" content="index, follow">
   <meta name="description"
     content="This challenge has something for everyone. It's a HTML and CSS only project, but we've also provided a JSON file of the test results for anyone wanting to practice JS.">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Results summary component</title>
 
@@ -71,10 +71,10 @@
       justify-content: center;
       align-items: center;
       border-radius: 2rem;
-      padding: 2rem 4rem;
+      padding: 2rem 3rem;
       background: linear-gradient(to bottom, var(--light_slate_blue) 1%, var(--light_royal_blue) 99%);
       gap: 2rem;
-      max-width: 20rem;
+      max-width: 18rem;
       width: 100%;
     }
 
@@ -113,8 +113,18 @@
     .result p:last-child {
       text-align: center;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 16px;
       color: var(--light_lavender);
+    }
+
+    .summary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 20rem;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -135,6 +145,26 @@
 
     <div class="summary">
       <h2>Summary</h2>
+
+      <div class="itens">
+        <div class="item">
+          <img src="./images/icon-reaction.svg" alt="icon_item.svg">
+        </div>
+
+        <div class="item">
+          <img src="./images/icon-reaction.svg" alt="icon_item.svg">
+        </div>
+
+        <div class="item">
+          <img src="./images/icon-reaction.svg" alt="icon_item.svg">
+        </div>
+
+        <div class="item">
+          <img src="./images/icon-reaction.svg" alt="icon_item.svg">
+        </div>
+      </div>
+
+      <button>Continue</button>
     </div>
   </main>
 
