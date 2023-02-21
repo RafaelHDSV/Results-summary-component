@@ -150,7 +150,7 @@
       justify-content: space-between;
       align-items: center;
       background-color: hsl(0, 100%, 67%, .1);
-      padding: 1rem .5rem;
+      padding: .8rem .5rem;
       border-radius: .5rem;
     }
 
@@ -224,7 +224,7 @@
           </div>
 
           <div class="numbers">
-            <p>80 </p>
+            <p class="score">80 </p>
             <p>/ 100</p>
           </div>
         </div>
@@ -236,7 +236,7 @@
           </div>
 
           <div class="numbers">
-            <p>80 </p>
+            <p class="score">80 </p>
             <p>/ 100</p>
           </div>
         </div>
@@ -248,7 +248,7 @@
           </div>
 
           <div class="numbers">
-            <p>80 </p>
+            <p class="score">80 </p>
             <p>/ 100</p>
           </div>
         </div>
@@ -260,7 +260,7 @@
           </div>
 
           <div class="numbers">
-            <p>80 </p>
+            <p class="score">80 </p>
             <p>/ 100</p>
           </div>
         </div>
@@ -288,6 +288,28 @@
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
     <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
   </footer> -->
+
+  <script>
+    let item = document.querySelectorAll('.item')
+    let titleItem = document.querySelectorAll('.item .title p')
+    let imageItem = document.querySelectorAll('.item .title img')
+    let scoreItem = document.querySelectorAll('.score')
+
+    function setData() {
+      fetch('data.json').then((response) => {
+        response.json().then((itens) => {
+          for (let i = 0; i < item.length; i++) {
+            imageItem[i].src = itens[i].icon
+            titleItem[i].innerHTML = itens[i].category
+            titleItem[i].style.color = `var(--${itens[i].color})`
+            scoreItem[i].innerHTML = itens[i].score
+          }
+        })
+      })
+    }
+
+    setData()
+  </script>
 </body>
 
 </html>
