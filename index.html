@@ -46,19 +46,45 @@
       font-family: 'Hanken Grotesk', sans-serif;
       font-size: 18px;
     }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--white);
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3rem;
+    }
   </style>
 </head>
 
 <body>
+  <main>
+    <div class="result">
+      <h2>Your Result</h2>
 
-  <!-- Your Result -->
-  <!-- 76 -->
-  <!-- of 100 -->
+      <div class="numbers_result">
+        <span>76</span>
+        <span>of 100</span>
+      </div>
 
-  <!-- Great -->
-  <!-- You scored higher than 65% of the people who have taken these tests. -->
+      <p>Great</p>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
 
-  <!-- Summary -->
+    <div class="summary">
+      <h2>Summary</h2>
+    </div>
+  </main>
 
   <!-- Reaction -->
   <!-- 80 / 100 -->
