@@ -219,48 +219,48 @@
       <div class="itens">
         <div class="item">
           <div class="title">
-            <img src="./images/icon-reaction.svg" alt="icon_item.svg">
-            <p>Reaction</p>
+            <img src="./images/icon-memory.svg" alt="icon_item.svg">
+            <p>Title</p>
           </div>
 
           <div class="numbers">
-            <p class="score">80 </p>
+            <p class="score">0 </p>
             <p>/ 100</p>
           </div>
         </div>
 
         <div class="item">
           <div class="title">
-            <img src="./images/icon-reaction.svg" alt="icon_item.svg">
-            <p>Reaction</p>
+            <img src="./images/favicon-32x32.png" alt="icon_item.svg">
+            <p>Title</p>
           </div>
 
           <div class="numbers">
-            <p class="score">80 </p>
+            <p class="score">0 </p>
             <p>/ 100</p>
           </div>
         </div>
 
         <div class="item">
           <div class="title">
-            <img src="./images/icon-reaction.svg" alt="icon_item.svg">
-            <p>Reaction</p>
+            <img src="./images/favicon-32x32.png" alt="icon_item.svg">
+            <p>Title</p>
           </div>
 
           <div class="numbers">
-            <p class="score">80 </p>
+            <p class="score">0 </p>
             <p>/ 100</p>
           </div>
         </div>
 
         <div class="item">
           <div class="title">
-            <img src="./images/icon-reaction.svg" alt="icon_item.svg">
-            <p>Reaction</p>
+            <img src="./images/favicon-32x32.png" alt="icon_item.svg">
+            <p>Title</p>
           </div>
 
           <div class="numbers">
-            <p class="score">80 </p>
+            <p class="score">0 </p>
             <p>/ 100</p>
           </div>
         </div>
@@ -269,20 +269,6 @@
       <button>Continue</button>
     </div>
   </main>
-
-  <!-- Reaction -->
-  <!-- 80 / 100 -->
-
-  <!-- Memory -->
-  <!-- 92 / 100 -->
-
-  <!-- Verbal -->
-  <!-- 61 / 100 -->
-
-  <!-- Visual -->
-  <!-- 72 / 100 -->
-
-  <!-- Continue -->
 
   <!-- <footer>
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
@@ -299,16 +285,17 @@
       fetch('data.json').then((response) => {
         response.json().then((itens) => {
           for (let i = 0; i < item.length; i++) {
+            item[i].style.backgroundColor = `hsl(${itens[i].color}, .1)`
             imageItem[i].src = itens[i].icon
             titleItem[i].innerHTML = itens[i].category
-            titleItem[i].style.color = `var(--${itens[i].color})`
+            titleItem[i].style.color = `hsl(${itens[i].color})`
             scoreItem[i].innerHTML = itens[i].score
           }
         })
       })
     }
 
-    setData()
+    // setData()
   </script>
 </body>
 
