@@ -149,6 +149,9 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      background-color: hsl(0, 100%, 67%, .1);
+      padding: 1rem .5rem;
+      border-radius: .5rem;
     }
 
     .item .title,
@@ -160,11 +163,20 @@
 
     .item .title p {
       color: var(--light_red);
+      font-size: 17px;
     }
 
     .item .numbers p:nth-child(1) {
       font-weight: 700;
       color: var(--dark_gray_blue);
+      font-size: 16px;
+    }
+
+    .item .numbers p:nth-child(2) {
+      font-weight: 700;
+      color: var(--dark_gray_blue);
+      opacity: .4;
+      font-size: 16px;
     }
 
     .summary button {
