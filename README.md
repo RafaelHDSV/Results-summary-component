@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/results-summary-component-html-css-javascript-DdDvuirLo-LUTION HERE
+- Solution URL: https://www.frontendmentor.io/solutions/results-summary-component-html-css-javascript-DdDvuirLo-LUTION
 - Live Site URL: https://results-summary-component-rafael.netlify.app/
 
 ### Screenshot
