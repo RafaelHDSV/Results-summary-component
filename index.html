@@ -219,53 +219,15 @@
     }
 
     @media screen and (max-width: 660px) {
-      @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
-      /* font-family: 'Hanken Grotesk', sans-serif; */
-
-      :root {
-        /* primary  */
-        --light_red: hsl(0, 100%, 67%);
-        --orange_yellow: hsl(39, 100%, 56%);
-        --green_teal: hsl(166, 100%, 37%);
-        --cobalt_blue: hsl(234, 85%, 45%);
-
-        /* gradients  */
-        --light_slate_blue: hsl(252, 100%, 67%);
-        --light_royal_blue: hsl(241, 81%, 54%);
-
-        --violet_blue: hsla(256, 72%, 46%, 1);
-        --persian_blue: hsla(241, 72%, 46%, 0);
-
-        /* neutral  */
-        --white: hsl(0, 0%, 100%);
-        --pale_blue: hsl(221, 100%, 96%);
-        --light_lavender: hsl(241, 100%, 89%);
-        --dark_gray_blue: hsl(224, 30%, 27%);
-      }
-
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Hanken Grotesk', sans-serif;
-        font-size: 18px;
-      }
-
       body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
-        height: 100vh;
-        background-color: var(--white);
+        height: 100%;
+        padding: 0;
       }
 
       main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        width: 100%;
       }
 
       .result {
@@ -274,12 +236,12 @@
         justify-content: center;
         align-items: center;
         border-radius: 2rem;
-        padding: 2rem 3rem;
+        padding: 3rem;
         background: linear-gradient(to bottom, var(--light_slate_blue) 1%, var(--light_royal_blue) 99%);
         gap: 2rem;
-        max-width: 18rem;
+        max-width: none;
         width: 100%;
-        margin: 0 -3rem 0 0;
+        margin: -1.5rem 0 0 0;
       }
 
       .result h2 {
@@ -327,7 +289,7 @@
         justify-content: center;
         align-items: flex-start;
         border-radius: 2rem;
-        padding: 2rem 2rem 2rem 5rem;
+        padding: 2rem;
         gap: 2rem;
         max-width: 20rem;
         width: 100vw;
