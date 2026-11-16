@@ -246,10 +246,6 @@ footer a:hover {
 footer #va-visits, .attribution #va-visits {
   margin: 0.25rem 0 0;
   padding: 0;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-  opacity: inherit;
-  text-align: inherit;
+  font-size: 11px;
   background: transparent;
 }
